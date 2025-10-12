@@ -1,0 +1,155 @@
+.site-header {
+  width: 100%;
+  padding: 40px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo-block {
+  text-align: center;
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.logo-block h2 {
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;              
+  padding: 40px 20px;     
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  text-align: center;
+  width: 300px;           
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;          
+  object-fit: cover;      
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05); 
+}
+
+.gallery-item p {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+ .about-apple {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 10px;    
+  padding-bottom: 40px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+
+.about-apple h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+.about-apple p {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 28px;
+}
+
+.apple-table {
+  width: 80%;
+  margin: 20px auto;
+  border: 2px dashed #64748b; 
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+.apple-table th {
+  background-color: #0f172a; 
+  color: white;             
+  padding: 12px;
+}
+
+
+.apple-table td {
+  background-color: #f1f5f9; 
+  padding: 10px;
+  border-top: 1px solid #cbd5e1;
+}
+
+.feedback {
+  text-align: center;
+  margin-top: 5px;    
+  margin-bottom: 25px;
+  padding: 15px;
+}
+
+.feedback h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.feedback input {
+  padding: 10px 14px;
+  width: 260px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.feedback input:focus {
+  border-color: #5145ff;
+  box-shadow: 0 0 6px #bae6fd;
+}
+
+.feedback button {
+  padding: 10px 16px;
+  margin-left: 8px;
+  background-color: #186b8f;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.feedback button:hover {
+  background-color: #102530;
+}
+
+html, body{
+    background:
+    radial-gradient(1000px 420px at 50% 0%, #0d3a67 0%, transparent 60%),
+    linear-gradient(180deg, #f9fbff 0%, #3b90ff 60%, #a3cef9 100%);
+} /*კი ეს ჯიპიტის დავამატებინე ძაან მოუხდა*/
+
+
