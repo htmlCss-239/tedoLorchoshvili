@@ -1,0 +1,137 @@
+.headerimg {
+display: flex;
+justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+nav a{
+
+    margin-top: 20px;
+    color: black;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.bouldering-container {
+  display: flex;
+  justify-content: flex-start;         
+  padding-top: 75px; 
+  padding-left: 590px;   
+  align-items: flex-start;  
+}
+
+#satauri {
+
+  font-size: 64px;
+  font-weight: 400;
+  width: 340px;
+  height: 75px;
+  color: #000;
+  margin: 0;
+}
+ 
+body{margin: 0;}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  margin-top: 50px;
+}
+
+.image-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.dots {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 150px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dots li {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+
+.img-1 {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.img-2 {
+  width: 225px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.img-3 {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.text-box {
+  width: 845px;
+  height: 200px;
+  margin: 60px auto;         
+  padding: 20px;
+  border: 2px solid black;    
+  border-radius: 20px;        
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000;
+}
+
+.text-box a {
+  color: #0000ff;             
+  text-decoration: underline;
+}
+
+
+.contact-section {
+  
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.form-field {
+  width: 930px;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  background-color: white;
+  padding: 5px 10px;
+  border: 12px solid black;
+}
+
+.form-field input {
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  margin-top: 5px;
+}
