@@ -1,0 +1,70 @@
+body {
+  font-family: "Bitcount Prop Single Ink", "Roboto", sans-serif;
+   font-size: 19px;
+  background: linear-gradient(to bottom, #0f0f18, #1a1440 55%, #1e22a0 90%);
+  color: #eee;
+}
+
+
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%; 
+  padding: 24px;}
+
+label, input {
+  display: block;
+}
+
+.card {
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  border-radius: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  border-color: #6f74ff;
+  box-shadow: 0 0 12px rgba(111, 116, 255, 0.4);
+}
+
+input {
+   width: 300px; 
+   height: 31px;
+  margin-bottom: 31px;
+  border-radius: 7px;
+  border: 2px solid #6f74ff;
+}
+
+.actions {
+   text-align: center;}
+
+.actions button {
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 8px;
+   border: 2px solid #b8b8ff;
+  background: linear-gradient(to bottom, #e8eaff, #c4c6ff);
+  color: #1a1b2e;
+  cursor: pointer;
+  transition: 0.2s ease
+}
+
+.actions button:hover {
+  border-color: #6f74ff;
+  box-shadow: 0 0 8px rgba(111,116,255,0.5);
+  transform: scale(1.05);
+}
+
+.actions button:active {
+  transform: scale(0.97);
+}
+input:hover {
+  border-color: hsl(238, 100%, 53%);
+  box-shadow: 0 0 10px rgba(16, 255, 251, 0.6);
+  transition: all 0.2s ease;
+}
+
+
+
+
