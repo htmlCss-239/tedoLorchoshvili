@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0a0a0a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #5e81f4;
+}
+
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('./bg-image\ 1.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+}
+
+.about {
+    padding: 80px 50px;
+    background-color: #0a0a0a;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    color: #5e81f4;
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #cccccc;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.services {
+    padding: 80px 50px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.services h3 {
+    color: #5e81f4;
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.services-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: #2a2a3e;
+    padding: 40px 30px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 400px;
+}
+
+.service-card img {
+    width: 60px;
+    margin: 0 auto 20px;
+}
+
+.service-card h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.portfolio {
+    padding: 80px 50px;
+    background-color: #0a0a0a;
+    text-align: center;
+}
+
+.portfolio h3 {
+    color: #5e81f4;
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.portfolio-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.portfolio-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1;
+    max-width: 350px;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.portfolio-card h4 {
+    padding: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #5e81f4;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    margin: 0 20px 20px 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #4a6fd4;
+}
+
+.contact {
+    padding: 100px 50px;
+    background-color: #2a2a3e;
+    text-align: center;
+}
+
+.contact-content h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.btn-contact {
+    display: inline-block;
+    background-color: #5e81f4;
+    color: #ffffff;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #4a6fd4;
+}
+
+
+.footer {
+    padding: 40px 50px;
+    background-color: #1a1a2e;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #888888;
+    font-size: 14px;
+}
