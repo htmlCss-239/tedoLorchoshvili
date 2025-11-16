@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+/* PAGE HERO */
 .page-hero {
     background: -o-linear-gradient(315deg, var(--primary-dark), var(--primary-green));
     background: linear-gradient(135deg, var(--primary-dark), var(--primary-green));
@@ -261,6 +262,12 @@
         padding: 16px;
     }
     
+    /* Faster animation on tablet */
+    .carousel-group {
+        -webkit-animation: scroll 20s linear infinite;
+                animation: scroll 20s linear infinite;
+    }
+    
     .cta-content h2 {
         font-size: var(--font-32);
     }
@@ -320,6 +327,11 @@
     .carousel-caption {
         font-size: var(--font-14);
         padding: 12px;
+    }
+    
+    .carousel-group {
+        -webkit-animation: scroll 12s linear infinite;
+                animation: scroll 12s linear infinite;
     }
     
     .cta {
