@@ -1,0 +1,568 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.page-hero {
+    background: -o-linear-gradient(315deg, var(--primary-dark), var(--primary-green));
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-green));
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.page-hero h1 {
+    color: var(--white);
+    font-size: 48px;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.page-hero p {
+    color: var(--light-cream);
+    font-size: var(--font-20);
+    margin: 0;
+}
+
+
+/* INTRO SECTION */
+.intro-section {
+    padding: 96px 0;
+    background: var(--white);
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro-text h2 {
+    color: var(--primary-dark);
+    font-size: var(--font-40);
+    margin-bottom: 24px;
+}
+
+.intro-text p {
+    color: var(--black);
+    font-size: var(--font-16);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.intro-image {
+    margin-top: 48px;
+    text-align: center;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: var(--radius-12);
+    -webkit-box-shadow: var(--shadow-large);
+            box-shadow: var(--shadow-large);
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* CLIMATE SECTION */
+.climate-section {
+    padding: 96px 0;
+    background: var(--light-cream);
+}
+
+.climate-section h2 {
+    color: var(--primary-dark);
+    font-size: var(--font-40);
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.climate-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 32px 1fr 32px 1fr 32px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.climate-card {
+    background: var(--white);
+    padding: 32px;
+    border-radius: var(--radius-12);
+    text-align: center;
+    -webkit-box-shadow: var(--shadow-small);
+            box-shadow: var(--shadow-small);
+    border: 2px solid transparent;
+}
+
+.climate-card:hover {
+    border-color: var(--accent-gold);
+    -webkit-box-shadow: var(--shadow-medium);
+            box-shadow: var(--shadow-medium);
+}
+
+.climate-icon {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.climate-card h3 {
+    color: var(--primary-green);
+    font-size: var(--font-20);
+    margin-bottom: 12px;
+}
+
+.climate-card p {
+    color: var(--gray);
+    font-size: var(--font-14);
+    line-height: 1.6;
+}
+
+
+/* HISTORY SECTION */
+.history-section {
+    padding: 96px 0;
+    background: var(--white);
+    text-align: center;
+}
+
+.history-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.history-image {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.history-image img {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: var(--radius-12);
+    -webkit-box-shadow: var(--shadow-large);
+            box-shadow: var(--shadow-large);
+    margin: 0 auto;
+    display: block;
+}
+
+.history-text h2 {
+    color: var(--primary-dark);
+    font-size: var(--font-40);
+    margin-bottom: 24px;
+}
+
+.history-text p {
+    color: var(--black);
+    font-size: var(--font-16);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* QUALITY FEATURES */
+.quality-features {
+    padding: 96px 0;
+    background: -o-linear-gradient(315deg, var(--light-cream), var(--cream));
+    background: linear-gradient(135deg, var(--light-cream), var(--cream));
+}
+
+.quality-features h2 {
+    color: var(--primary-dark);
+    font-size: var(--font-40);
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.features-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+    padding: 32px;
+    background: var(--white);
+    border-radius: var(--radius-12);
+    -webkit-box-shadow: var(--shadow-small);
+            box-shadow: var(--shadow-small);
+    border-left: 4px solid var(--accent-gold);
+}
+
+.feature-item:last-child {
+    margin-bottom: 0;
+}
+
+.feature-icon {
+    font-size: 32px;
+    color: var(--accent-gold);
+    font-weight: 700;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: var(--light-cream);
+    border-radius: 50%;
+}
+
+.feature-content h3 {
+    color: var(--primary-green);
+    font-size: var(--font-24);
+    margin-bottom: 12px;
+}
+
+.feature-content p {
+    color: var(--black);
+    font-size: var(--font-16);
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* NUTRITION SECTION */
+.nutrition-section {
+    padding: 96px 0;
+    background: var(--white);
+}
+
+.nutrition-section h2 {
+    color: var(--primary-dark);
+    font-size: var(--font-40);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-intro {
+    text-align: center;
+    color: var(--gray);
+    font-size: var(--font-18);
+    margin-bottom: 48px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nutrition-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 32px 1fr 32px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.nutrition-card {
+    background: var(--light-cream);
+    padding: 32px;
+    border-radius: var(--radius-12);
+    -webkit-box-shadow: var(--shadow-small);
+            box-shadow: var(--shadow-small);
+    border: 2px solid transparent;
+}
+
+.nutrition-card:hover {
+    border-color: var(--accent-gold);
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+}
+
+.nutrition-card h3 {
+    color: var(--primary-dark);
+    font-size: var(--font-20);
+    margin-bottom: 16px;
+}
+
+.nutrition-card p {
+    color: var(--black);
+    font-size: var(--font-14);
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* CTA SECTION */
+.cta {
+    padding: 80px 0;
+    background: -o-linear-gradient(315deg, var(--primary-dark), var(--primary-green));
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-green));
+    text-align: center;
+}
+
+.cta-content h2 {
+    color: var(--white);
+    font-size: var(--font-40);
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    color: var(--light-cream);
+    font-size: var(--font-20);
+    margin-bottom: 32px;
+}
+
+.cta-content .btn {
+    background: var(--accent-gold);
+    color: var(--primary-dark);
+}
+
+.cta-content .btn:hover {
+    background: var(--white);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+
+/* RESPONSIVE - TABLET (768px) */
+@media screen and (max-width: 768px) {
+    .page-hero {
+        padding: 60px 0;
+    }
+    
+    .page-hero h1 {
+        font-size: 36px;
+    }
+    
+    .page-hero p {
+        font-size: var(--font-18);
+    }
+    
+    .intro-section {
+        padding: 64px 0;
+    }
+    
+    .intro-text h2 {
+        font-size: var(--font-32);
+    }
+    
+    .intro-image img {
+        max-width: 100%;
+        height: 300px;
+    }
+    
+    .climate-section {
+        padding: 64px 0;
+    }
+    
+    .climate-section h2 {
+        font-size: var(--font-32);
+    }
+    
+    .climate-grid {
+        -ms-grid-columns: 1fr 24px 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
+    .history-section {
+        padding: 64px 0;
+    }
+    
+    .history-text h2 {
+        font-size: var(--font-32);
+    }
+    
+    .history-image img {
+        max-width: 100%;
+        height: 300px;
+    }
+    
+    .quality-features {
+        padding: 64px 0;
+    }
+    
+    .quality-features h2 {
+        font-size: var(--font-32);
+    }
+    
+    .feature-item {
+        padding: 24px;
+    }
+    
+    .nutrition-section {
+        padding: 64px 0;
+    }
+    
+    .nutrition-section h2 {
+        font-size: var(--font-32);
+    }
+    
+    .nutrition-grid {
+        -ms-grid-columns: 1fr 24px 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
+    .cta-content h2 {
+        font-size: var(--font-32);
+    }
+    
+    .cta-content p {
+        font-size: var(--font-18);
+    }
+}
+
+
+/* RESPONSIVE - MOBILE (480px) */
+@media screen and (max-width: 480px) {
+    .page-hero {
+        padding: 40px 0;
+    }
+    
+    .page-hero h1 {
+        font-size: 28px;
+    }
+    
+    .page-hero p {
+        font-size: var(--font-16);
+    }
+    
+    .intro-section {
+        padding: 48px 0;
+    }
+    
+    .intro-text h2 {
+        font-size: var(--font-24);
+    }
+    
+    .intro-text p {
+        font-size: var(--font-14);
+    }
+    
+    .intro-image img {
+        height: 250px;
+    }
+    
+    .climate-section {
+        padding: 48px 0;
+    }
+    
+    .climate-section h2 {
+        font-size: var(--font-24);
+    }
+    
+    .climate-grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .climate-card {
+        padding: 24px;
+    }
+    
+    .climate-icon {
+        font-size: 48px;
+    }
+    
+    .history-section {
+        padding: 48px 0;
+    }
+    
+    .history-text h2 {
+        font-size: var(--font-24);
+    }
+    
+    .history-text p {
+        font-size: var(--font-14);
+    }
+    
+    .history-image img {
+        height: 250px;
+    }
+    
+    .quality-features {
+        padding: 48px 0;
+    }
+    
+    .quality-features h2 {
+        font-size: var(--font-24);
+        margin-bottom: 32px;
+    }
+    
+    .feature-item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+        margin-bottom: 24px;
+    }
+    
+    .feature-icon {
+        font-size: 28px;
+        width: 42px;
+        height: 42px;
+    }
+    
+    .feature-content h3 {
+        font-size: var(--font-18);
+    }
+    
+    .feature-content p {
+        font-size: var(--font-14);
+    }
+    
+    .nutrition-section {
+        padding: 48px 0;
+    }
+    
+    .nutrition-section h2 {
+        font-size: var(--font-24);
+    }
+    
+    .section-intro {
+        font-size: var(--font-16);
+        margin-bottom: 32px;
+    }
+    
+    .nutrition-grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .nutrition-card {
+        padding: 24px;
+    }
+    
+    .nutrition-card h3 {
+        font-size: var(--font-18);
+    }
+    
+    .cta {
+        padding: 48px 0;
+    }
+    
+    .cta-content h2 {
+        font-size: var(--font-24);
+    }
+    
+    .cta-content p {
+        font-size: var(--font-16);
+    }
+}
