@@ -286,6 +286,10 @@
         margin-bottom: 32px;
     }
     
+     .carousel-group[aria-hidden="true"] {
+        display: none !important;
+    }
+    
     .carousel-item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 300px;
