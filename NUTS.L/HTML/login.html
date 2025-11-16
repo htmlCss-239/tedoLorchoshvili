@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Nuts L Company</title>
+    <meta name="description" content="Login to Nuts L Company portal">
+    <link rel="icon" type="image/png" href="../IMAGES/favicon.png">
+    <link rel="stylesheet" href="../CSS/variables.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-box">
+                <div class="logo">
+                    <a href="../HTML/index.html">
+                        <img src="../IMAGES/logo.png" alt="Nuts L Company Logo">
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu">
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="../HTML/about.html">About Us</a></li>
+                    <li><a href="../HTML/products.html">Products</a></li>
+                    <li><a href="../HTML/georgian-hazelnut.html">Georgian Hazelnut</a></li>
+                    <li class="dropdown">
+                        <a href="../HTML/gallery.html">Gallery</a>
+                    </li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                    <li><a href="../HTML/login.html" class="login-link">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="login-section">
+            <div class="container">
+                <div class="login-box">
+                    <h1>Login to Your Account</h1>
+                    <p>Access your Nuts L Company portal</p>
+
+                    <form id="loginForm" class="login-form">
+                        
+                        <div class="form-group">
+                            <label for="username">Username *</label>
+                            <input type="text" id="username" name="username" placeholder="Enter your username">
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password *</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password">
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>User Type *</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="user-type" value="customer" checked>
+                                    <span>Customer</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="user-type" value="distributor">
+                                    <span>Distributor</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="user-type" value="admin">
+                                    <span>Admin</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="remember" name="remember">
+                                <span>Remember me</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span>I agree to the Terms and Conditions *</span>
+                            </label>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Login</button>
+
+                        <div class="form-links">
+                            <a href="#">Forgot Password?</a>
+                            <a href="#">Create Account</a>
+                        </div>
+                    </form>
+
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <p>✅ Login successful! Redirecting...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Nuts L Company</h3>
+                    <p>Leading exporter of premium Georgian hazelnuts from the Black Sea Region since 2000. ISO 22000:2018 certified.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../HTML/index.html">Home</a></li>
+                        <li><a href="../HTML/about.html">About Us</a></li>
+                        <li><a href="../HTML/products.html">Products</a></li>
+                        <li><a href="../HTML/georgian-hazelnut.html">Georgian Hazelnut</a></li>
+                        <li><a href="../HTML/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="../HTML/products.html#in-shell">Hazelnuts in Shell</a></li>
+                        <li><a href="../HTML/products.html#kernels">Natural Kernels</a></li>
+                        <li><a href="../HTML/products.html#roasted">Roasted Kernels</a></li>
+                        <li><a href="../HTML/products.html#diced">Roasted Diced</a></li>
+                        <li><a href="../HTML/products.html#meal">Hazelnut Meal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>📍 Samegrelo Region, Georgia</li>
+                        <li>📧 info@nutsl.ge</li>
+                        <li>📞 +995 551 81 75 75</li>
+                        <li>📞 +995 599 06 75 75</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nuts L Company. All rights reserved.</p>
+                <div class="footer-certs">
+                    <span>ISO 22000:2018</span>
+                    <span>HACCP Certified</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var menuToggle = document.querySelector('.menu-toggle');
+        var navMenu = document.querySelector('.nav-menu');
+        
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        var navLinks = document.querySelectorAll('.nav-menu a');
+        for (var i = 0; i < navLinks.length; i++) {
+            navLinks[i].addEventListener('click', function() {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        }
+
+        var loginForm = document.getElementById('loginForm');
+        var successMessage = document.getElementById('successMessage');
+
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            var username = document.getElementById('username');
+            var password = document.getElementById('password');
+            var terms = document.getElementById('terms');
+            
+            var errors = document.querySelectorAll('.error-message');
+            for (var i = 0; i < errors.length; i++) {
+                errors[i].style.display = 'none';
+                errors[i].textContent = '';
+            }
+            
+            var formGroups = document.querySelectorAll('.form-group');
+            for (var j = 0; j < formGroups.length; j++) {
+                formGroups[j].classList.remove('error');
+            }
+            
+            var valid = true;
+            
+            if (username.value === '') {
+                username.parentElement.classList.add('error');
+                username.parentElement.querySelector('.error-message').textContent = 'Username is required';
+                username.parentElement.querySelector('.error-message').style.display = 'block';
+                valid = false;
+            }
+
+            if (password.value === '') {
+                password.parentElement.classList.add('error');
+                password.parentElement.querySelector('.error-message').textContent = 'Password is required';
+                password.parentElement.querySelector('.error-message').style.display = 'block';
+                valid = false;
+            } else if (password.value.length < 6) {
+                password.parentElement.classList.add('error');
+                password.parentElement.querySelector('.error-message').textContent = 'Password must be at least 6 characters';
+                password.parentElement.querySelector('.error-message').style.display = 'block';
+                valid = false;
+            }
+            
+            if (!terms.checked) {
+                terms.parentElement.parentElement.classList.add('error');
+                terms.parentElement.parentElement.querySelector('.error-message').textContent = 'You must agree to Terms and Conditions';
+                terms.parentElement.parentElement.querySelector('.error-message').style.display = 'block';
+                valid = false;
+            }
+        
+            if (valid) {
+                loginForm.style.display = 'none';
+                successMessage.style.display = 'block';
+
+                setTimeout(function() {
+                    window.location.href = '../HTML/index.html';
+                }, 2000);
+            }
+        });
+    </script>
+
+</body>
+</html>
